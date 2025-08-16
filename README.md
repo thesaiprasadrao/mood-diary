@@ -1,1 +1,39 @@
-# mood-diary
+# Mood Diary
+
+Lightweight, client‑side mood & journaling tracker. Pick a mood, jot a note, and watch simple stats build over time — all stored privately in your own browser (localStorage). No backend, no signup.
+
+## Features
+- Quick mood selection (😢 😐 😊 😍 🤩)
+- Contextual prompts & dynamic button text per mood
+- LocalStorage persistence (entries never leave your device)
+- Auto “Quote of the Day” (deterministic rotation)
+- Animated mood distribution chart
+- Entry history with relative dates (Today / Yesterday)
+- Delete entries + toast feedback & subtle animations
+
+## Tech Stack
+Pure HTML + CSS + Vanilla JS (no dependencies).
+
+## Use It
+1. Clone or download.
+2. Open `index.html` in a browser (double‑click or drag into a tab). That’s it.
+
+Optional: run a local server for cleaner file URLs.
+
+## Development
+All logic lives in `script.js`; styling in `style.css`. Feel free to:
+- Add moods (extend `moodConfig`).
+- Change quotes (edit `quotes` array).
+- Adjust animations or colors in the CSS.
+
+## Data & Privacy
+Everything is stored under the key `mood-diary-entries` in `localStorage`. Clearing browser data or using a different browser/device resets the diary.
+
+## Ideas / Next
+- Export & import (JSON)
+- Dark mode toggle
+- Streaks & insights
+- PWA/offline manifest & icon
+
+---
+Made with 💖 — reflect daily and be kind to yourself.
