@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Diary - How are you feeling today? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Mood Diary</h1>
+            <p>Your safe space to capture emotions and memories 💕</p>
+        </header>
+
+        <!-- Quote of the Day -->
+        <div class="card quote-card">
+            <div class="quote-emoji">💭</div>
+            <h4 class="quote-heading">Quote of the Day</h4>
+            <div class="quote-text" id="quote-text"></div>
+            <div class="quote-author" id="quote-author"></div>
+        </div>
+
+        <!-- Mood Selector -->
+        <div class="card mood-selector">
+            <h2>How are you feeling today? 💕</h2>
+            <div class="mood-grid">
+                <div class="mood-option">
+                    <button class="mood-button" data-mood="sad">😢</button>
+                    <span class="mood-label sad">Sad</span>
+                </div>
+                <div class="mood-option">
+                    <button class="mood-button" data-mood="neutral">😐</button>
+                    <span class="mood-label neutral">Neutral</span>
+                </div>
+                <div class="mood-option">
+                    <button class="mood-button" data-mood="happy">😊</button>
+                    <span class="mood-label happy">Happy</span>
+                </div>
+                <div class="mood-option">
+                    <button class="mood-button" data-mood="love">😍</button>
+                    <span class="mood-label love">In Love</span>
+                </div>
+                <div class="mood-option">
+                    <button class="mood-button" data-mood="excited">🤩</button>
+                    <span class="mood-label excited">Excited</span>
+                </div>
+            </div>
+            <div class="mood-feedback hidden" id="mood-feedback">
+                Great choice! Now tell us about your day below ✨
+            </div>
+        </div>
+
+        <!-- Note Input -->
+        <div class="card note-section disabled-section" id="note-section">
+            <h3>Share your thoughts 📝</h3>
+            <textarea 
+                class="note-textarea" 
+                id="note-textarea" 
+                placeholder="Select a mood first to write your thoughts..."
+                disabled
+            ></textarea>
+            <button class="save-button" id="save-button" disabled>Save Entry</button>
+        </div>
+
+        <!-- Mood Chart -->
+        <div class="card chart hidden" id="mood-chart">
+            <div class="chart-emoji">📊</div>
+            <h3>Your Mood Patterns</h3>
+            <p class="chart-subtitle" id="chart-subtitle"></p>
+            <div class="chart-bars" id="chart-bars"></div>
+            <div class="chart-footer">
+                <p class="chart-footer-note">Keep tracking to discover more insights! ✨</p>
+            </div>
+        </div>
+
+        <!-- History -->
+        <div class="card history">
+            <h3>Your Mood Journey 🌸</h3>
+            <div id="history-content">
+                <div class="history-empty">
+                    <div class="history-empty-emoji">📖</div>
+                    <h4 class="history-empty-heading">Your diary is waiting</h4>
+                    <p class="history-empty-note">Start by selecting a mood and writing your first entry! ✨</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with 💖 for tracking your beautiful journey</p>
+        </footer>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
