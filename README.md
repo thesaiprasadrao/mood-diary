@@ -30,10 +30,13 @@ All logic lives in `script.js`; styling in `style.css`. Feel free to:
 Everything is stored under the key `mood-diary-entries` in `localStorage`. Clearing browser data or using a different browser/device resets the diary.
 
 ## Ideas / Next
-- Export & import (JSON)
 - Dark mode toggle
 - Streaks & insights
-- PWA/offline manifest & icon
+- API's for quotes
+- Authentication
 
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
+ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ---
 Made with 💖 — reflect daily and be kind to yourself.
